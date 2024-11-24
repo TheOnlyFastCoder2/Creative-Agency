@@ -1,4 +1,3 @@
-import PictureParallax from 'lib/components/PictureParallax';
 import H3 from 'lib/ui/H3';
 import H5 from 'lib/ui/H5';
 import { useRef } from 'react';

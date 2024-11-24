@@ -1,6 +1,5 @@
 import H3 from 'lib/ui/H3';
 import H6 from 'lib/ui/H6';
-import styled from 'styled-components';
 
 import IMG_1 from 'assets/imgs/WorkingSpace/1.png';
 import IMG_2 from 'assets/imgs/WorkingSpace/2.png';

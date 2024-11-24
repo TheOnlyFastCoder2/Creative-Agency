@@ -1,4 +1,4 @@
-import 'swiper/css';
+import 'swiper/swiper-bundle.css';
 import styled from 'styled-components';
 import { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
