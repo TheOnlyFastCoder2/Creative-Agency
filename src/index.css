@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+  font-family: 'Inter Sans';
+  src: url("./assets/fonts/Inter_Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+:root {
+  /* --sm: 640px;
+  --md: 768px;
+  --lg: 1024px;
+  --xl: 1280px; */
+  --shadow-color: #DBDEE1;
+  --gradient-light: radial-gradient(#FFFFFF, rgb(228, 231, 233, 0.5));
+  --gradient-purple: linear-gradient(180deg, rgba(132,136,234,1) 0%, rgba(186,189,246,1) 100%);
+
+  --light-line: 236, 236, 236;
+  --footer-line: 216, 216, 216;
+
+  --grayscale-1: 8, 20, 32;
+  --grayscale-2: 25, 36, 49;
+  --grayscale-3: 33, 44, 60;
+  --grayscale-4: 112, 121, 139;
+  --grayscale-5: 171, 175, 199;
+  --grayscale-6: 243, 244, 246;
+
+  --dark: 0, 17, 59;
+  --white: 255, 255, 255;
+  
+  --text-dark: 17, 16, 41;
+  --text-gray: 107, 107, 107;
+
+  --primary-1: 76, 64, 247;
+  --primary-2: 255, 104, 0;
+
+  --secondary-1: 255, 59, 47;
+  --secondary-2: 254, 150, 2;
+  --secondary-3: 255, 204, 0;
+  --secondary-4: 74, 219, 97;
+  --secondary-5: 92, 200, 252;
+  
+  --tertiary-1: 0, 123, 255;
+  --tertiary-2: 89, 85, 216;
+  --tertiary-3: 255, 45, 90;
+
+  --offset: clamp(24px, -2.0949rem + 13.4387vw, 160px);  /*  60px, 24px; */
+  --transition: 0.2s ease;
+}
+
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* box-shadow:  0 0 0 2px red; */
+}
+body {
+  overflow-x: hidden;
+}
+#root {
+  max-width: 1440px;
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0 auto;
+
+  .Section {
+    &:not(.Section.__nopadding) {
+      padding-left: var(--offset);
+      padding-right: var(--offset);
+    }
+
+
+    & > .H3 , & > .H6 {
+      text-align: center;
+      padding: 0 5px;
+      margin: 0 auto;
+    }
+
+    & > .H6 {
+      color: rgb(var(--tertiary-3));
+    }
+    
+    & > .H3 {
+      margin-top:20px;
+      margin-bottom: 60px;
+      color: rgb(var(--text-dark));
+    }
+  }
+}
+
+ul {list-style-type: none;}
+a {text-decoration: none;}
+button,input,textarea {
+  border:unset;
+  outline: none;;
+  background-color:unset;
+  cursor: pointer;
+}
+
+body, .__scroll {
+  /* WebKit */
+  --width: 6px;
+  &::-webkit-scrollbar {
+    width: var(--width);
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgb(var(--primary-1), 0.7);
+    cursor: grab;
+  }
+
+  &::-moz-scrollbar {
+    width: var(--width);
+  }
+
+  &::-moz-scrollbar-thumb {
+    background: rgb(var(--primary-1), 0.7);
+    cursor: grab;
+  }
+
+  /* IE и Edge (частично, стилизация ограничена) */
+  &::-ms-scrollbar {
+      width: var(--width);
+  }
+
+  &::-ms-scrollbar-thumb {
+      background: rgb(var(--primary-1), 0.7);
+      cursor: grab;
+  }
+}
+@media (min-width: 1440px) {
+  #root {
+    .Section:not(.Section:first-child, .Section.__noTopPadding) {
+      padding-top: 200px;
+    }
+
+    .Section.__marginTop {
+      margin-top: 200px;
+    }
+  }
+}
+
+@media (max-width: 1440px )   {
+  #root {
+    .Section:not(.Section:first-child, .Section.__noTopPadding) {
+      padding-top: 120px;
+    }
+    .Section.__marginTop {
+      margin-top: 120px;
+    }
+  }
+}
+
